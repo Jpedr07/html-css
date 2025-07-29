@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #0f721748;
+    --cor2: #62a714; 
+    --cor3:  #85a164; 
+    --cor4: #c2f099;
+    --cor5:  #3b7e11;
+    --corcomplementar: #1a73e8;
+}
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Orbitron', sans-serif; 
+    background-color: var(--cor1);
+    color: #333; 
+    box-sizing: border-box;
+}
+
+header{
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--cor2);
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size: 2.5em; 
+}
+
+header p{
+    font-size: 1.1em;
+    text-align: center;
+}
+
+nav{
+    text-align: center;
+    gap: 20px;
+    padding: 10px 0; 
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    background-color: var(--cor4);
+}
+
+nav a{
+    color: var(--cor2);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color: var(--cor1);
+}
+
+main{
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+article img, picture img{
+    width: 100%;
+    max-width: 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--cor5);
+}
+ 
+p{
+    text-indent: 1em;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+iframe{
+  width: 100%;
+  height: 315px;
+  max-width: 800px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+iframe + a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--corcomplementar);
+    text-decoration: none;
+}
+
+iframe + a:hover{
+    text-decoration: underline;
+}
+
+ul.versoes{
+    padding: 20px;
+}
+
+ul.versoes a{
+    list-style: none;
+    padding-left: 20px; 
+}
+
+aside{
+    background: var(--cor1);
+    border-right: 6px solid var(--cor3);
+    padding: 15px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+footer{
+    margin-top: 40px;
+    padding: 20px;
+    color: white;
+    font-size: 0.9em;
+    background-color: var(--cor2);
+}
+
+footer p{
+    text-align: center;
+}
+
+footer a{
+    color: var(--corcomplementar);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
